@@ -13,11 +13,12 @@ const ProductCard = ({ product }: ProductCardProps) => {
   return (
     <div className="card-product group">
       <div className="relative aspect-square bg-secondary overflow-hidden">
-        <div className="absolute inset-0 flex items-center justify-center">
-          <span className="font-display text-2xl font-semibold text-primary/20">
-            {product.brand}
-          </span>
-        </div>
+        <img
+          src={product.image}
+          alt={product.name}
+          className="absolute inset-0 w-full h-full object-cover"
+          loading="lazy"
+        />
         <div className="absolute inset-0 bg-foreground/0 group-hover:bg-foreground/5 transition-colors duration-300" />
         <Button
           size="icon"

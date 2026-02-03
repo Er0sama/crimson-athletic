@@ -21,7 +21,7 @@ const Header = () => {
       <div className="container mx-auto px-4">
         <div className="flex items-center justify-between h-16 md:h-20">
           {/* Logo */}
-          <Link to="/" className="font-display text-xl md:text-2xl font-semibold text-foreground tracking-tight">
+          <Link to="/" className="font-display text-2xl md:text-3xl font-semibold text-foreground tracking-tight">
             ATHLETIC
           </Link>
 
@@ -31,9 +31,8 @@ const Header = () => {
               <Link
                 key={link.path}
                 to={link.path}
-                className={`nav-link ${
-                  location.pathname === link.path ? 'text-primary' : ''
-                }`}
+                className={`text-lg font-medium hover:text-primary transition-colors ${location.pathname === link.path ? 'text-primary' : ''
+                  }`}
               >
                 {link.label}
               </Link>
@@ -48,7 +47,7 @@ const Header = () => {
               className="relative"
               onClick={() => setIsCartOpen(true)}
             >
-              <ShoppingBag className="h-5 w-5" />
+              <ShoppingBag className="h-8 w-8" />
               {totalItems > 0 && (
                 <span className="absolute -top-1 -right-1 h-5 w-5 bg-primary text-primary-foreground text-xs rounded-full flex items-center justify-center font-medium">
                   {totalItems}
@@ -75,9 +74,8 @@ const Header = () => {
                 <Link
                   key={link.path}
                   to={link.path}
-                  className={`nav-link py-2 ${
-                    location.pathname === link.path ? 'text-primary' : ''
-                  }`}
+                  className={`text-base font-medium hover:text-primary transition-colors py-2 ${location.pathname === link.path ? 'text-primary' : ''
+                    }`}
                   onClick={() => setIsMobileMenuOpen(false)}
                 >
                   {link.label}
