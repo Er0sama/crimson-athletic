@@ -15,20 +15,17 @@ const Hero = () => {
           poster="https://images.unsplash.com/photo-1461896836934-ffe607ba8211?w=1920&auto=format&fit=crop"
           className="w-full h-full object-cover"
         >
+          {/* Add your own video file in public folder and use: /videos/fitness.mp4 */}
           <source
-            src="https://cdn.coverr.co/videos/coverr-man-running-on-a-treadmill-6886/1080p.mp4"
+            src="https://assets.mixkit.co/videos/preview/mixkit-woman-running-above-the-city-32066-large.mp4"
             type="video/mp4"
           />
           <source
-            src="https://player.vimeo.com/external/434045526.sd.mp4?s=fc4a2e6d2f1c0c0d9e9efc0c7d2a9f6e&profile_id=164&oauth2_token_id=57447761"
+            src="https://assets.mixkit.co/videos/preview/mixkit-athletic-man-working-out-on-a-climbing-wall-28888-large.mp4"
             type="video/mp4"
           />
           <source
-            src="https://assets.mixkit.co/videos/preview/mixkit-athlete-running-on-a-running-track-32807-large.mp4"
-            type="video/mp4"
-          />
-          <source
-            src="https://storage.coverr.co/videos/FLNdYxQ4F01p7f01eYaJCK6Gp00aWfPqt1/preview"
+            src="https://assets.mixkit.co/videos/preview/mixkit-fitness-girl-doing-yoga-in-nature-44583-large.mp4"
             type="video/mp4"
           />
         </video>
